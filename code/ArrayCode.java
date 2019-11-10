@@ -75,6 +75,56 @@ public class ArrayCode {
         return data[index];
     }
 
+    // 查找是否存在某个e
+    public boolean contains(int e) {
+        for (int i = 0; i < size; i++) {
+            if (data[i] == e) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // 查找元素e并返回index
+    public int find(int e) {
+        for (int i = 0; i < size; i++) {
+            if (data[i] == e) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    // 从数组中删除指定索引
+    public int remove(int index) {
+        if (index < 0 || index > size) {
+            throw new IllegalArgumentException("Delete faild. Require index >=0 and inde <=size");
+        }
+        int res = data[index];
+        for (int i = index + 1; i < size; i++) {
+            data[i - 1] = data[i];
+        }
+        size--;
+        return res;
+    }
+
+    // 从数组中删除第一个元素
+    public int removeFirst() {
+        return remove(0);
+    }
+
+    // 从数组中删除最后一个元素
+    public int removeLast() {
+        return remove(size - 1);
+    }
+
+    // 从数组中删除元素e,可以更多操作：返回布尔型（是否成功）、检查是否还存在e元素（重复）removeAll和findAll;
+    public void removeElement(int e) {
+        int index = find(e);
+        if (index != -1) {
+            remove(index);
+        }
+    }
 
     @Override
     public String toString() {
