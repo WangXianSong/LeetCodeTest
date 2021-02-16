@@ -7,7 +7,7 @@ public class Q7_Reverse {
         int res = 0;
 
         while (x != 0) {
-            int pop = x % 10; //取末1位
+            int pop = x % 10; // 取末1位
             x /= 10; // 删末1位
 
             //如果 res = pop * 10 + pop导致溢出，
