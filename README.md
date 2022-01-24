@@ -16,6 +16,40 @@ A repository of algorithm exercises.
 - [2.Flipping an Image](https://github.com/WangXianSong/LeetCodeText/blob/master/code/832FlippinganImage.java)：https://leetcode-cn.com/problems/flipping-an-image/
 
 
+- 加一
+
+```kotlin
+fun main() {
+
+    var aaa: IntArray = intArrayOf(9, 9, 9)
+    var temp = plusOne(aaa)
+
+
+    for (index in temp) {
+        println(index)
+    }
+}
+
+fun plusOne(digits: IntArray): IntArray {
+    // 获取数组长度
+    val length: Int = digits.size
+    // 如果当前位是9，设置当前为0
+    for (index in length - 1 downTo 0) {
+        if (digits[index] != 9) {  // 如果不是9，那么就加1并结束循环
+            digits[index]++
+            return digits
+        } else { // 如果当前位是9，设置当前为0
+            digits[index] = 0
+        }
+    }
+
+    // 除非是999，否则不会来到这一步，直接新建一个数组，设置首位为0即可
+    var temp = IntArray(length + 1)
+    temp[0] = 1
+    return temp
+}
+```
+
 ## 栈 
 
 ## 队列
