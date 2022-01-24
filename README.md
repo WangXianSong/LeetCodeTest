@@ -50,6 +50,31 @@ fun plusOne(digits: IntArray): IntArray {
 }
 ```
 
+- 移动零
+
+```kotlin
+    var num = 0
+    var zero = 0 // 一直记录最前的零的索引
+    var size = nums.size
+
+
+    for (index in nums.indices) {
+        // 如果当前数不为0，则和零标记符换位
+        if (nums[index] != 0) {
+            var temp = nums[zero]
+            nums[zero] = nums[index]
+            nums[index] = nums[zero]
+            // 零的位置++
+            zero++
+        }
+    }
+
+    // 剩余的要设为0
+    for (index in zero until size ) {
+        nums[index] = 0
+    }
+```
+
 ## 栈 
 
 ## 队列
