@@ -7,7 +7,7 @@ A repository of algorithm exercises.
 
 ## 前言
 
-- [数据结构与算法的笔记]([code/数据结构与算法的笔记.md])
+- [数据结构与算法的笔记](code/数据结构与算法的笔记.md)
 
 ## 数组 
 
