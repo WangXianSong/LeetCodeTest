@@ -7,7 +7,7 @@ A repository of algorithm exercises.
 
 ## 前言
 
-- [数据结构与算法的笔记](https://github.com/WangXianSong/LeetCodeTest/blob/master/code/%E7%AC%94%E8%AE%B0/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9A%84%E7%AC%94%E8%AE%B0.md)
+- [数据结构与算法的笔记]([../code/数据结构与算法的笔记.md]))
 
 ## 数组 
 
