@@ -13,7 +13,7 @@ A repository of algorithm exercises.
 
 - [通过二次封装 Array 来学习数组](code/01_Array/通过二次封装Array来学习数组.md))
 - [1. twoSum1 两数之和1](code/01_Array/1_twoSum.java) ： https://leetcode-cn.com/problems/two-sum/
-- [2.Flipping an Image](code/832FlippinganImage.java)：https://leetcode-cn.com/problems/flipping-an-image/
+- [2.Flipping an Image](code/832_FlippinganImage.java)：https://leetcode-cn.com/problems/flipping-an-image/
 - [66.PlusOne 加一](code/01_Array/Q66_PlusOne.kt)
 - [283.MoveZeroes 移动零](code/01_Array/Q283_MoveZeroes.kt)
 
